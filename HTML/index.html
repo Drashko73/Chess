@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <meta name="author" content="Radovan Draskovic">
+
+    <link rel="shortcut icon" href="../Images/tabIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../StyleSheets/style.css">
+    <script src="../Scripts/script.js" defer ></script>
+</head>
+<body onload="preparePage()">
+
+    <div id="menu">
+        <button onclick="preparePage()" title="Restart">New game</button>
+        <button onclick='window.open("https://www.chess.com/learn-how-to-play-chess", "_blank")' title="For amazing tutorial follow this link">Tutorial</button>
+        <button onclick="window.open('./contact.html', '_blank')" title="Contact me">Contact me</button>
+    </div>
+
+    <div id="page">
+        <div id="choosePieceToChange"></div>
+        <div id="boardDiv"></div>
+    </div>
+
+    <div id="winner"><span id="textWin"></span></div>
+
+</body>
+</html>

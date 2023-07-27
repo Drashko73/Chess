@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Radovan Draskovic">
+    
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../StyleSheets/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="shortcut icon" href="../Images/tabIcon.png" type="image/x-icon">
+</head>
+<body onload="preparePage()">
+<div id="page">
+    <div id="contentKontakt" class="content">
+        <h1>Contact information</h1>
+        <div id="mail">
+            <h3>Send e-mail</h3>
+
+            <fieldset style="width: max-content;">
+                <legend>Enter the message</legend>
+                <form action="mailto: radovandk@gmail.com" method="post" enctype="text/plain">
+                    <textarea name="Text" id="textMail" cols="85" rows="10" style="resize: none;" spellcheck="false"></textarea><br>
+                    <input type="submit" value="Send mail" title="Send">
+                </form>
+            </fieldset>
+        </div>
+
+        <div id="other">
+            <h3>Link to social networks</h3>
+            <div style="margin-bottom: 5px;">
+                <img src="../Images/linkedinLogo.png" alt="linkedin" width="25px" height="25px" title="Linkedin" draggable="false">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/radovan-draskovic/" target="_blank" title="Follow link">in/radovan-draskovic/</a> <br>
+            </div>
+            <div>
+                <img src="../Images/githubLogo.png" alt="github" width="25px" height="25px" title="GitHub" draggable="false">&nbsp;&nbsp;<a href="https://github.com/Drashko73" target="_blank" title="Follow link">github.com/Drashko73</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function preparePage() {
+        document.getElementById("textMail").value = "";
+    }
+</script>
+
+</body>
+</html>
