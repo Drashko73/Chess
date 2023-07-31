@@ -50,6 +50,8 @@ function preparePage() {
     enpassantBlackEnableLeft = [];
     enpassantBlackEnableRight = [];
 
+    containerTurn.src = "../Images/Pieces/" + turn + "KING.png";
+
     for(let i = 0; i < COLUMNS; i++) {
         whitePawnsMovedTwoSquares.push(false);
         blackPawnsMovedTwoSquares.push(false);
@@ -259,6 +261,8 @@ function movePiece(startId, endId, imageSource) {
     
     if(needPawnReplacement == WAITING) return;
 
+    containerTurn.src = "../Images/Pieces/" + turn + "KING.png";
+   
     let audio1 = new Audio();
     let audio2 = new Audio();
     let audio3 = new Audio();
@@ -1511,6 +1515,7 @@ const WAITING       = "waiting";
 const containerBoardDiv = document.getElementById("boardDiv");
 const containerDisplayWinner = document.getElementById("textWin");
 const containerChoosePiece = document.getElementById("choosePieceToChange");
+const containerTurn = document.querySelectorAll("#turn img")[0];
 
 let lastClicked = undefined;
 let lastClassName = undefined;
