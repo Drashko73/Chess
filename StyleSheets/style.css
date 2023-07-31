@@ -118,3 +118,12 @@ div#boardDiv table td img:active {
     opacity: 1;
     cursor: pointer;
 }
+
+div#turn {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
