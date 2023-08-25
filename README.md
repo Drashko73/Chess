@@ -4,7 +4,7 @@ Since a very young age, I have enjoyed playing chess and, after embarking on my 
 
 The project itself is mainly written in JavaScript and, of course, has a bit of HTML and CSS for styling purposes as well. It is ideal for people who don't know how to play chess since it does not allow invalid moves, has validation procedures for every move, and offers move suggestions after picking the piece you would like to move.
 
-# Examples and fetures
+# Examples and features
 
 _Initial look after loading the page or after choosing **New game** option:_
 
